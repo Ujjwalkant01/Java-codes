@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Calculate_Percentage {
+
+    public static void main(String[] args){
+        float subj1;
+        float subj2;
+        float subj3;
+        float subj4;
+        float subj5;
+        float sum;
+        float percentage;
+        float total = 500;
+        System.out.println("Enter the marks of subject1:");
+        Scanner sc= new Scanner(System.in);
+        subj1=sc.nextInt();
+        System.out.println("Enter the marks of subject2:");
+        subj2=sc.nextInt();
+        System.out.println("Enter the marks of subject3:");
+        subj3=sc.nextInt();
+        System.out.println("Enter the marks of subject4:");
+        subj4=sc.nextInt();
+        System.out.println("Enter the marks of subject5:");
+        subj5=sc.nextInt();
+
+
+        sum = subj1 + subj2 + subj3 + subj4 + subj5;
+
+        System.out.println("Sum of all subjects =");
+        System.out.println(sum);
+        System.out.println("Percentage is:");
+
+        percentage= ((sum/total)*100);
+
+        System.out.print(percentage);
+
+    }
+}
